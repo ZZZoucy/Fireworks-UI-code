@@ -2,7 +2,7 @@
     <div>
         <Topnav/>
         <div class="content">
-            <aside>
+            <aside v-if="asideVisible">
                 <h2>组件列表</h2>
                 <ol>
                     <li><router-link to="/doc/switch">Switch 组件</li>
@@ -17,9 +17,15 @@
 </template>
 
 <script lang="ts">
-import Topnav from '../components/Topnav.vue'
+import Topnav from '../components/Topnav.vue';
+import { Ref , inject } from 'vue';
+
 export default {
-    components:{Topnav}
+    components:{Topnav},
+    setup(){
+        const asideVisible = inject<Ref<boolean>>('asideVisible');   // get
+        return {asideVisible}
+    }
 }
 </script>
 
