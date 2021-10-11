@@ -1,5 +1,5 @@
 <template>
-    <button>
+    <button class="gulu-button" :class="`theme-${theme}`">
         <slot />
     </button>
 </template>
@@ -7,7 +7,12 @@
 <script lang="ts">
 import Vue from 'vue'
 export default {
-
+    props:{
+        theme:{
+            type: String,
+            default: 'button'
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
