@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import Tab from './Tab.vue';
-import { computed, ref, onMounted,onUpdated } from 'vue';
+import { ref, onMounted,onUpdated } from 'vue';
 export default {
     props:{
         selected:{
