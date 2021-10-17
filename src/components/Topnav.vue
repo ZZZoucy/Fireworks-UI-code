@@ -1,20 +1,18 @@
 <template>
-    <div>
-        <div class="topnav">
-            <router-link to="/" class="logo">
-                <svg class="icon">
-                    <use xlink:href="#icon-yanhua"></use>
-                </svg>
-            </router-link>
-            <ul class="menu">
-                <li>
-                    <router-link to="/doc">文档</router-link>
-                </li>
-            </ul>
-            <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleAside">
-                <use xlink:href="#icon-menu"></use>
+    <div class="topnav">
+        <router-link to="/" class="logo">
+            <svg class="icon">
+                <use xlink:href="#icon-yanhua"></use>
             </svg>
-        </div>
+        </router-link>
+        <ul class="menu">
+            <li>
+                <router-link to="/doc">文档</router-link>
+            </li>
+        </ul>
+        <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleAside">
+            <use xlink:href="#icon-menu"></use>
+        </svg>
     </div>
 </template>
 
