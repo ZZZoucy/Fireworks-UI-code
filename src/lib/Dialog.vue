@@ -1,21 +1,23 @@
 <template>
     <template v-if="visible">
-        <div class="gulu-dialog-overlay" @click="closeOnClickOverlay"></div>
-        <div class="gulu-dialog-wrapper">
-            <div class="gulu-dialog">
-                <header>标题 
-                    <span @click="close" class="gulu-dialog-close"></span>
-                </header>
-                <main>
-                    <p>第一行字</p>
-                    <p>第二行字</p>
-                </main>
-                <footer>
-                    <Button level="main" @click="ok">OK</Button>
-                    <Button @click="cancel">Cancel</Button>
-                </footer>
+        <teleport to="body">
+            <div class="gulu-dialog-overlay" @click="closeOnClickOverlay"></div>
+            <div class="gulu-dialog-wrapper">
+                <div class="gulu-dialog">
+                    <header>
+                        <slot name="title"/>
+                        <span @click="close" class="gulu-dialog-close"></span>
+                    </header>
+                    <main>
+                        <slot name="content"/>
+                    </main>
+                    <footer>
+                        <Button level="main" @click="ok">OK</Button>
+                        <Button @click="cancel">Cancel</Button>
+                    </footer>
+                </div>
             </div>
-        </div>
+        </teleport>
     </template>
 </template> 
 

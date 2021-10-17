@@ -5,8 +5,15 @@
     <h1>示例1</h1>
     <Button @click="toggle">toggle</Button>
     <Dialog v-model:visible="x" :closeOnClickOverlay="false"
-            :ok="f1" :cancel="f2"
-    ></Dialog>
+            :ok="f1" :cancel="f2">
+        <template v-slot:content>
+            <h1>hi</h1>
+            <h1>hi2</h1>
+        </template>
+        <template v-slot:title>
+            <strong>加粗的标题</strong>
+        </template>
+    </Dialog>
 </template>
 
 <script lang="ts">
