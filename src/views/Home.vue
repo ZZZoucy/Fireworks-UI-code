@@ -3,7 +3,7 @@
         <div class="TopnavAndBanner">
             <Topnav/>
             <div class="banner">
-                <h1>轱辘UI</h1>
+                <h1>Fireworks UI</h1>
                 <h2>一个面向学习者的 UI 框架</h2>
                 <p class="actions">
                     <a href="https://github.com">Github</a>
@@ -19,7 +19,7 @@
                     <use xlink:href="#icon-Vue"></use>
                 </svg>
                 <h3>基于 Vue 3</h3>
-                <p>骄傲地使用了 Vue 3 Composition API</p>
+                <p>使用了 Vue 3 Composition API</p>
             </li>
             <li>
                 <svg>
@@ -47,11 +47,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$green: #02bcb0;
+$green: #5ed8d0;
 $border-radius: 4px;
-$color: #007974;
+$color: #5a5860;
 .TopnavAndBanner{
-    background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
+    background: rgb(255,200,202);
+    background: linear-gradient(38deg, rgba(255,200,202,1) 0%, rgba(255,192,196,1) 20%, rgba(239,219,224,1) 40%, rgba(221,235,242,1) 60%, rgba(206,246,255,1) 80%, rgba(197,253,255,1) 100%);       
     clip-path: ellipse(80% 60% at 50% 40%);
 }
 .features {
