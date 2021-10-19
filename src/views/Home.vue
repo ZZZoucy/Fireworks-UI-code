@@ -47,8 +47,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$green: #5ed8d0;
-$border-radius: 4px;
+$pink: #ed96ac;
+$border-radius: 16px;
 $color: #5a5860;
 .TopnavAndBanner{
     background: rgb(255,200,202);
@@ -97,14 +97,14 @@ $color: #5a5860;
                 font-size: 28px;
             }
             >p {
-                grid-area: text
+                grid-area: text;
             }
         }
     }
 }
 .banner{
     color: $color;
-    padding: 100px 0;
+    padding: 130px 0 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,14 +113,15 @@ $color: #5a5860;
         padding: 8px 0;
         a {
             margin: 0 8px;
-            background: $green;
+            background: $pink;
             color: white;
             display: inline-block;
-            $h: 28px;
+            $h: 24px;
             border-radius: $border-radius;
             padding: 8px 24px;
             &:hover{
                 text-decoration: none;
+                box-shadow: 0 2px;
             }
         }
     }

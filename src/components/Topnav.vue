@@ -37,46 +37,68 @@ export default {
 
 <style lang="scss" scoped>
 $color: #5a5860;
+;
 .topnav {
     color: $color;
-    display: flex;
-    padding: 16px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 20;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(#333, 0.1);
+    display: flex;
+    padding: 8px;
+    z-index: 10;
+    color: $color;
     justify-content: center;
     align-items: center;
     > .logo {
         max-width: 6em;
         margin-right: auto;
-        > svg{
+        > a {
+            text-decoration: none;
+        }
+        svg {
             width: 32px;
             height: 32px;
+            margin: 6px 1em;
         }
     }
     > .menu {
         display: flex;
+        flex-direction: row;
         white-space: nowrap;
         flex-wrap: nowrap;
         > li {
-        margin: 0 1em;
+            margin: 10px 1em;
+            > a {
+                text-decoration: none;
+                &:hover {
+                    border-bottom: none;
+                }
+            }
         }
     }
     > .toggleAside {
+        display: none;
         width: 32px;
         height: 32px;
         position: absolute;
         left: 16px;
         top: 50%;
         transform: translateY(-50%);
-        display: none;
+        overflow: hidden;
     }
-    @media(max-width:500px){
-        > .menu{display: none;}
-        > .logo{margin: 0 auto;}
-        > .toggleAside{display: inline-block;}
+    @media (max-width: 500px) {
+        > .menu {
+            display: none;
+        }
+        > .logo {
+            margin: 0 auto;
+        }
+        > .toggleAside {
+            display: inline-block;
+        }
     }
 }
 </style> 

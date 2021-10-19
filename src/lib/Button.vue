@@ -40,7 +40,7 @@ export default {
             }
         });
         return { classes }
-    }
+    },
 }
 </script>
 <style lang="scss">

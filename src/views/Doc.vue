@@ -21,6 +21,7 @@
                     <li><router-link to="/doc/button">Button 组件</router-link></li>
                     <li><router-link to="/doc/dialog">Dialog 组件</router-link></li>
                     <li><router-link to="/doc/tabs">Tabs 组件</router-link></li>
+                    <li><router-link to="/doc/carousel">Carousel 组件</router-link></li>
                 </ol>
             </aside>
             <main>
@@ -45,57 +46,103 @@ export default {
 
 <style lang="scss" scoped>
 $aside-index: 10;
+$lightbgc: #fff9f9;
+$deepbgc: #e18ca1;
+$text: #ae82aa;
 .layout {
     display: flex;
     flex-direction: column;
     height: 100vh;
     > .nav {
-        flex-shrink: 0;
+        flex-shrink: 0; //高度变化时不收缩
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
     > .content {
-        flex-grow: 1;
+        display: flex;
         padding-top: 60px;
-        padding-left: 156px;
-    @media (max-width: 500px) {
-        padding-left: 0; 
-    }
-  }
-}
-.content {
-    display: flex;
-    > aside {
-        flex-shrink: 0;
-    }
-    > main {
-        flex-grow: 1;
-        padding: 16px;
-        /* background: lightgreen; */
+        padding-left: 265px;
+        main {
+            height: 100vh;
+            overflow: auto;
+            flex-grow: 1;
+            padding: 60px;
+        }
+        @media (max-width: 500px) {
+            padding-left: 0;
+        main {
+            height: 80vh;
+            overflow: auto;
+            flex-grow: 1; //高度变化时,占据剩余空间
+            padding: 32px;
+        }
+        }
     }
 }
 aside {
-    background: #cef6ff;
-    width: 150px;
-    padding: 16px 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    padding-top: 70px;
-    height: 100%;
-    z-index: $aside-index;
+    width: 265px;
+    height: 110vh;
+    // font-size: 18px;
+    padding: 16px 0;
+    padding-top: 80px;
+    background: #fff;
+    box-shadow: 5px 0 5px rgba(#333, 0.1);
+    z-index: 1;
+    transition: all 0.4s cubic-bezier(0.68, 0.18, 0.53, 0.18) 0.1s;
     > h2 {
         margin-bottom: 4px;
-        padding: 0 16px;
+        margin-top: 16px;
+        padding: 0 40px;
+        color: #5a5860;;
     }
     > ol {
+        line-height: 40px;
         > li {
-            >a{
+        > a {
+            position: relative;
+            height: 40px;
+            color: $text;
+            display: block;
+            padding: 4px 50px;
+            text-decoration: none;
+            &:hover {
+            // color: #fff;
+            background: $lightbgc;
+            border-bottom: none;
+            }
+        }
+        .router-link-active {
+            background: $lightbgc;
+            // color: #fff;
+            border-right: 3px solid $deepbgc;
+            @media (min-width: 500px) {
+            border-right: none;
+            &::after {
+                content: "";
                 display: block;
-                padding: 4px 16px;
-                text-decoration: none;
+                animation: bdrolate 0.8s;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 3px;
+                height: 40px;
+                background-color: $deepbgc;
             }
-            .router-link-active{
-                background: white;
             }
+        }
+        }
+    }
+    @keyframes bdrolate {
+        0% {
+        transform: rotateX(90deg);
+        }
+        100% {
+        transform: rotateX(0deg);
         }
     }
 }

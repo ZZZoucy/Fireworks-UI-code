@@ -27,6 +27,7 @@ export default {
         background: #bfbfbf; 
         border-radius: $h/2; 
         position: relative;
+        cursor: pointer;
         > span {
             position: absolute; 
             top: 2px; 

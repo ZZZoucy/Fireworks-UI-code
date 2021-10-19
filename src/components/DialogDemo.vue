@@ -15,3 +15,9 @@ export default {
     },
 }
 </script>
+
+<style lang="scss">
+div{
+    color: #5a5860;
+}
+</style>
