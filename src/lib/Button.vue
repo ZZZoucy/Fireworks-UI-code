@@ -113,21 +113,21 @@ export default {
                 background: $blue;
                 color: white;
                 border-color: $blue;
-            &:hover,
-            &:focus {
-                background: darken($blue, 10%);
-                border-color: darken($blue, 10%);
-            }
+                &:hover,
+                &:focus {
+                    background: darken($blue, 10%);
+                    border-color: darken($blue, 10%);
+                }
             }
             &.gulu-level-danger {
                 background: $red;
                 border-color: $red;
                 color: white;
-            &:hover,
-            &:focus {
-                background: darken($red, 10%);
-                border-color: darken($red, 10%);
-            }
+                &:hover,
+                &:focus {
+                    background: darken($red, 10%);
+                    border-color: darken($red, 10%);
+                }
             }
         }
         &.gulu-theme-link {

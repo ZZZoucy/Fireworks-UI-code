@@ -45,7 +45,7 @@ $color: #5a5860;
     left: 0;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0 5px 5px rgba(#333, 0.1);
+    box-shadow: 0 2px 2px rgba(#333, 0.1);
     display: flex;
     padding: 8px;
     z-index: 10;

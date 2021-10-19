@@ -87,11 +87,10 @@ aside {
     left: 0;
     width: 265px;
     height: 110vh;
-    // font-size: 18px;
     padding: 16px 0;
     padding-top: 80px;
     background: #fff;
-    box-shadow: 5px 0 5px rgba(#333, 0.1);
+    box-shadow: 4px 0 4px rgba(#333, 0.1);
     z-index: 1;
     transition: all 0.4s cubic-bezier(0.68, 0.18, 0.53, 0.18) 0.1s;
     > h2 {
