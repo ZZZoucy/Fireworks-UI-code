@@ -55,7 +55,7 @@ export default {
         box-sizing: border-box;
         height: $h;
         padding: 0 12px;
-        margin: 5px;
+        margin: 8px;
         cursor: pointer;
         display: inline-flex;
         justify-content: center;
@@ -68,7 +68,7 @@ export default {
         box-shadow: 0 1px 0 fade-out(black, 0.95);
         transition: background 250ms;
         & + & {
-            margin-left: 4px;
+            margin-left: 8px;
         }
         &:hover,
         &:focus {
@@ -151,6 +151,30 @@ export default {
                     background: darken($red, 10%);
                     border-color: darken($red, 10%);
                 }
+            }
+        }
+        &.gulu-theme-link {
+            &.gulu-level-danger {
+                color: $red;
+                &:hover,
+                &:focus {
+                    color: darken($red, 10%);
+                }
+            }
+        }
+        &.gulu-theme-button {
+            &[disabled] {
+                cursor: not-allowed;
+                color: $grey;
+                &:hover {
+                    border-color: $grey;
+                }
+            }
+        }
+        &.gulu-theme-link, &.gulu-theme-text {
+            &[disabled] {
+                cursor: not-allowed;
+                color: $grey;
             }
         }
         > .gulu-loadingIndicator{

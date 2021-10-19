@@ -1,10 +1,10 @@
 <template>
-    <div class="gulu-tabs">
+    <div class="gulu-tabs" >
         <div class="gulu-tabs-nav" ref="container">
         <div class="gulu-tabs-nav-item" v-for="(t,index) in titles" :ref="el => { if (el) navItems[index] = el }" @click="select(t)" :class="{selected: t=== selected}" :key="index">{{t}}</div>
         <div class="gulu-tabs-nav-indicator" ref="indicator"></div>
     </div>
-    <div class="gulu-tabs-content">
+    <div class="gulu-tabs-content" >
         <component :is="current" :key="current.props.title" />
     </div>
     </div>
@@ -88,6 +88,13 @@ export default {
         }
         &-content{
             padding: 8px 0;
+            &-item {
+                display: none;
+                &.selected {
+                    display: block;
+                }
+            }
         }
+        
     }
 </style>

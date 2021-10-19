@@ -4,8 +4,9 @@
 
 <template>
 <Tabs v-model:selected="x">
-  <Tab title="导航1">内容1</Tab>
-  <Tab title="导航2">内容2</Tab>
+  <Tab title="早上">早上</Tab>
+  <Tab title="中午">中午</Tab>
+  <Tab title="晚上">晚上</Tab>
 </Tabs>
 </template>
 
@@ -16,7 +17,7 @@ import { ref } from 'vue';
 export default {
   components:{ Tabs, Tab },
   setup(){
-    const x = ref('导航1')
+    const x = ref('早上')
     return { x }
   }
 }
