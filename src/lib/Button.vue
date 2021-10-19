@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-import { computed } from '@vue/reactivity'
+import { computed } from 'vue';
 export default {
     props:{
         theme:{
@@ -43,6 +43,7 @@ export default {
     },
 }
 </script>
+
 <style lang="scss">
     $h: 32px;
     $border-color: #d9d9d9;
