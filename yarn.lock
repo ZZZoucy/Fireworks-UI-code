@@ -700,6 +700,108 @@ es-module-lexer@^0.3.25:
   resolved "https://registry.npmmirror.com/es-module-lexer/download/es-module-lexer-0.3.26.tgz?cache=0&sync_timestamp=1633089217430&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fes-module-lexer%2Fdownload%2Fes-module-lexer-0.3.26.tgz#7b507044e97d5b03b01d4392c74ffeb9c177a83b"
   integrity sha1-e1BwROl9WwOwHUOSx0/+ucF3qDs=
 
+esbuild-android-arm64@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-android-arm64/download/esbuild-android-arm64-0.13.4.tgz?cache=0&sync_timestamp=1634439353182&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-android-arm64%2Fdownload%2Fesbuild-android-arm64-0.13.4.tgz#5178a20d2b7aba741a31c19609f9e67b346996b9"
+  integrity sha1-UXiiDSt6unQaMcGWCfnmezRplrk=
+
+esbuild-darwin-64@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-darwin-64/download/esbuild-darwin-64-0.13.4.tgz?cache=0&sync_timestamp=1634439364213&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-darwin-64%2Fdownload%2Fesbuild-darwin-64-0.13.4.tgz#7a3e66c8e1271b650541b25eed65c84f3564a69d"
+  integrity sha1-ej5myOEnG2UFQbJe7WXITzVkpp0=
+
+esbuild-darwin-arm64@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-darwin-arm64/download/esbuild-darwin-arm64-0.13.4.tgz?cache=0&sync_timestamp=1634439351878&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-darwin-arm64%2Fdownload%2Fesbuild-darwin-arm64-0.13.4.tgz#793feca6032b2a57ef291eb9b2d33768d60a49d6"
+  integrity sha1-eT/spgMrKlfvKR65stM3aNYKSdY=
+
+esbuild-freebsd-64@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-freebsd-64/download/esbuild-freebsd-64-0.13.4.tgz?cache=0&sync_timestamp=1634439364430&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-freebsd-64%2Fdownload%2Fesbuild-freebsd-64-0.13.4.tgz#294aec3c2cf4b41fb6900212fc9c33dd8fbbb4a2"
+  integrity sha1-KUrsPCz0tB+2kAIS/Jwz3Y+7tKI=
+
+esbuild-freebsd-arm64@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-freebsd-arm64/download/esbuild-freebsd-arm64-0.13.4.tgz#09fe66c751c12f9b976976b1d83f3de594cb2787"
+  integrity sha1-Cf5mx1HBL5uXaXax2D895ZTLJ4c=
+
+esbuild-linux-32@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-linux-32/download/esbuild-linux-32-0.13.4.tgz?cache=0&sync_timestamp=1634439354232&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-32%2Fdownload%2Fesbuild-linux-32-0.13.4.tgz#a9f0793d7bcc9cef4f4ffa4398c525877fba5839"
+  integrity sha1-qfB5PXvMnO9PT/pDmMUlh3+6WDk=
+
+esbuild-linux-64@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-linux-64/download/esbuild-linux-64-0.13.4.tgz?cache=0&sync_timestamp=1634439353714&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-64%2Fdownload%2Fesbuild-linux-64-0.13.4.tgz#c0d0b4c9d62e3bbf8bdf2cece37403aa6d60fc2e"
+  integrity sha1-wNC0ydYuO7+L3yzs43QDqm1g/C4=
+
+esbuild-linux-arm64@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-linux-arm64/download/esbuild-linux-arm64-0.13.4.tgz?cache=0&sync_timestamp=1634439356290&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-arm64%2Fdownload%2Fesbuild-linux-arm64-0.13.4.tgz#1292d97bfa64a08d12728f8a7837bf92776c779b"
+  integrity sha1-EpLZe/pkoI0Sco+KeDe/kndsd5s=
+
+esbuild-linux-arm@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-linux-arm/download/esbuild-linux-arm-0.13.4.tgz?cache=0&sync_timestamp=1634439354738&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-arm%2Fdownload%2Fesbuild-linux-arm-0.13.4.tgz#186cd9b8885ac132b9953a4a0afe668168debd10"
+  integrity sha1-GGzZuIhawTK5lTpKCv5mgWjevRA=
+
+esbuild-linux-mips64le@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-linux-mips64le/download/esbuild-linux-mips64le-0.13.4.tgz?cache=0&sync_timestamp=1634439357154&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-mips64le%2Fdownload%2Fesbuild-linux-mips64le-0.13.4.tgz#42049bf72bc586817b4a51cc9e32148d13e5e807"
+  integrity sha1-QgSb9yvFhoF7SlHMnjIUjRPl6Ac=
+
+esbuild-linux-ppc64le@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-linux-ppc64le/download/esbuild-linux-ppc64le-0.13.4.tgz?cache=0&sync_timestamp=1634439355307&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-linux-ppc64le%2Fdownload%2Fesbuild-linux-ppc64le-0.13.4.tgz#adf1ce2ef2302757c4383887da6ac4dd25be9d4f"
+  integrity sha1-rfHOLvIwJ1fEODiH2mrE3SW+nU8=
+
+esbuild-openbsd-64@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-openbsd-64/download/esbuild-openbsd-64-0.13.4.tgz?cache=0&sync_timestamp=1634439363533&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-openbsd-64%2Fdownload%2Fesbuild-openbsd-64-0.13.4.tgz#1c8122101898c52a20c8786935cf3eb7a19b83b4"
+  integrity sha1-HIEiEBiYxSogyHhpNc8+t6Gbg7Q=
+
+esbuild-sunos-64@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-sunos-64/download/esbuild-sunos-64-0.13.4.tgz#4ec95faa14a60f295fe485bebffefff408739337"
+  integrity sha1-TslfqhSmDylf5IW+v/7/9Ahzkzc=
+
+esbuild-windows-32@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-windows-32/download/esbuild-windows-32-0.13.4.tgz#3182c380487b797b04d0ec2c80c2945666869080"
+  integrity sha1-MYLDgEh7eXsE0OwsgMKUVmaGkIA=
+
+esbuild-windows-64@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-windows-64/download/esbuild-windows-64-0.13.4.tgz?cache=0&sync_timestamp=1634439364830&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild-windows-64%2Fdownload%2Fesbuild-windows-64-0.13.4.tgz#b9e995f92d81f433a04f33611e603e82f9232e69"
+  integrity sha1-uemV+S2B9DOgTzNhHmA+gvkjLmk=
+
+esbuild-windows-arm64@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild-windows-arm64/download/esbuild-windows-arm64-0.13.4.tgz#fb239532f07b764d158f4cc787178ef4c6fadb5c"
+  integrity sha1-+yOVMvB7dk0Vj0zHhxeO9Mb621w=
+
+esbuild@0.13.4:
+  version "0.13.4"
+  resolved "https://registry.npmmirror.com/esbuild/download/esbuild-0.13.4.tgz?cache=0&sync_timestamp=1634439358064&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fesbuild%2Fdownload%2Fesbuild-0.13.4.tgz#ce2deb56c4fb360938311cbfc67f8e467bb6841b"
+  integrity sha1-zi3rVsT7Ngk4MRy/xn+ORnu2hBs=
+  optionalDependencies:
+    esbuild-android-arm64 "0.13.4"
+    esbuild-darwin-64 "0.13.4"
+    esbuild-darwin-arm64 "0.13.4"
+    esbuild-freebsd-64 "0.13.4"
+    esbuild-freebsd-arm64 "0.13.4"
+    esbuild-linux-32 "0.13.4"
+    esbuild-linux-64 "0.13.4"
+    esbuild-linux-arm "0.13.4"
+    esbuild-linux-arm64 "0.13.4"
+    esbuild-linux-mips64le "0.13.4"
+    esbuild-linux-ppc64le "0.13.4"
+    esbuild-openbsd-64 "0.13.4"
+    esbuild-sunos-64 "0.13.4"
+    esbuild-windows-32 "0.13.4"
+    esbuild-windows-64 "0.13.4"
+    esbuild-windows-arm64 "0.13.4"
+
 esbuild@^0.8.12:
   version "0.8.57"
   resolved "https://registry.npmmirror.com/esbuild/download/esbuild-0.8.57.tgz#a42d02bc2b57c70bcd0ef897fe244766bb6dd926"
@@ -1098,6 +1200,11 @@ jest-worker@^26.2.1:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
+joycon@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.npm.taobao.org/joycon/download/joycon-2.2.5.tgz#8d4cf4cbb2544d7b7583c216fcdfec19f6be1615"
+  integrity sha1-jUz0y7JUTXt1g8IW/N/sGfa+FhU=
+
 js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.nlark.com/js-tokens/download/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -1318,6 +1425,13 @@ node-forge@^0.10.0:
   version "0.10.0"
   resolved "https://registry.npm.taobao.org/node-forge/download/node-forge-0.10.0.tgz?cache=0&sync_timestamp=1599010726129&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnode-forge%2Fdownload%2Fnode-forge-0.10.0.tgz#32dea2afb3e9926f02ee5ce8794902691a676bf3"
   integrity sha1-Mt6ir7Ppkm8C7lzoeUkCaRpna/M=
+
+node-sass@4, "node-sass@npm:sass@1.26.11":
+  version "1.26.11"
+  resolved "https://registry.npmmirror.com/sass/download/sass-1.26.11.tgz?cache=0&sync_timestamp=1634164731833&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsass%2Fdownload%2Fsass-1.26.11.tgz#0f22cc4ab2ba27dad1d4ca30837beb350b709847"
+  integrity sha1-DyLMSrK6J9rR1Mowg3vrNQtwmEc=
+  dependencies:
+    chokidar ">=2.0.0 <4.0.0"
 
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
@@ -1585,7 +1699,24 @@ rollup-plugin-dynamic-import-variables@^1.1.0:
     globby "^11.0.0"
     magic-string "^0.25.7"
 
-rollup-plugin-terser@^7.0.2:
+rollup-plugin-esbuild@2.5.0:
+  version "2.5.0"
+  resolved "https://registry.npmmirror.com/rollup-plugin-esbuild/download/rollup-plugin-esbuild-2.5.0.tgz#5748352d0b688743ac64fc85fa86939e00098524"
+  integrity sha1-V0g1LQtoh0OsZPyF+oaTngAJhSQ=
+  dependencies:
+    "@rollup/pluginutils" "^3.1.0"
+    joycon "^2.2.5"
+    strip-json-comments "^3.1.1"
+
+rollup-plugin-scss@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.nlark.com/rollup-plugin-scss/download/rollup-plugin-scss-2.6.0.tgz#2845be27e01aa1bfc1847cfaabb8255c1c83cf6d"
+  integrity sha1-KEW+J+Aaob/BhHz6q7glXByDz20=
+  dependencies:
+    node-sass "4"
+    rollup-pluginutils "2"
+
+rollup-plugin-terser@7.0.2, rollup-plugin-terser@^7.0.2:
   version "7.0.2"
   resolved "https://registry.npm.taobao.org/rollup-plugin-terser/download/rollup-plugin-terser-7.0.2.tgz#e8fbba4869981b2dc35ae7e8a502d5c6c04d324d"
   integrity sha1-6Pu6SGmYGy3DWufopQLVxsBNMk0=
@@ -1594,6 +1725,15 @@ rollup-plugin-terser@^7.0.2:
     jest-worker "^26.2.1"
     serialize-javascript "^4.0.0"
     terser "^5.0.0"
+
+rollup-plugin-vue@6.0.0-beta.10:
+  version "6.0.0-beta.10"
+  resolved "https://registry.npm.taobao.org/rollup-plugin-vue/download/rollup-plugin-vue-6.0.0-beta.10.tgz#66d9b9a8dd2d085267d1cc398ea0113360879ac1"
+  integrity sha1-Ztm5qN0tCFJn0cw5jqARM2CHmsE=
+  dependencies:
+    debug "^4.1.1"
+    hash-sum "^2.0.0"
+    rollup-pluginutils "^2.8.2"
 
 rollup-plugin-vue@^6.0.0:
   version "6.0.0"
@@ -1609,7 +1749,7 @@ rollup-plugin-web-worker-loader@^1.3.1:
   resolved "https://registry.npm.taobao.org/rollup-plugin-web-worker-loader/download/rollup-plugin-web-worker-loader-1.6.1.tgz#9d7a27575b64b0780fe4e8b3bc87470d217e485f"
   integrity sha1-nXonV1tksHgP5OizvIdHDSF+SF8=
 
-rollup-pluginutils@^2.8.2:
+rollup-pluginutils@2, rollup-pluginutils@^2.8.2:
   version "2.8.2"
   resolved "https://registry.npm.taobao.org/rollup-pluginutils/download/rollup-pluginutils-2.8.2.tgz#72f2af0748b592364dbd3389e600e5a9444a351e"
   integrity sha1-cvKvB0i1kjZNvTOJ5gDlqURKNR4=
@@ -1744,6 +1884,11 @@ strip-final-newline@^2.0.0:
   version "2.0.0"
   resolved "https://registry.nlark.com/strip-final-newline/download/strip-final-newline-2.0.0.tgz#89b852fb2fcbe936f6f4b3187afb0a12c1ab58ad"
   integrity sha1-ibhS+y/L6Tb29LMYevsKEsGrWK0=
+
+strip-json-comments@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.nlark.com/strip-json-comments/download/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
+  integrity sha1-MfEoGzgyYwQ0gxwxDAHMzajL4AY=
 
 supports-color@^5.3.0:
   version "5.5.0"
