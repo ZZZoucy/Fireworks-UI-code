@@ -16,6 +16,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+$border-color: #d9d9d9;
+.demo{
+    border: 1px solid $border-color;
+    border-radius: 8px;
+}
 </style>
