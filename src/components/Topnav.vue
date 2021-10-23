@@ -7,6 +7,9 @@
         </router-link>
         <ul class="menu">
             <li>
+                <a href="https://www.zhihu.com/people/tian-cai-z-70" target="_blank">博客</a>
+            </li>
+            <li>
                 <router-link to="/doc">文档</router-link>
             </li>
         </ul>
@@ -70,7 +73,7 @@ $color: #5a5860;
         white-space: nowrap;
         flex-wrap: nowrap;
         > li {
-            margin: 10px 1em;
+            margin: 10px .8em;
             > a {
                 text-decoration: none;
                 &:hover {
