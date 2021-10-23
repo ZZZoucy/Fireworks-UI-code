@@ -82,7 +82,7 @@ $text: #ae82aa;
     }
 }
 aside {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 265px;
