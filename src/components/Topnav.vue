@@ -7,10 +7,10 @@
         </router-link>
         <ul class="menu">
             <li>
-                <a href="https://www.zhihu.com/people/tian-cai-z-70" target="_blank">博客</a>
+                <router-link to="/doc">文档</router-link>
             </li>
             <li>
-                <router-link to="/doc">文档</router-link>
+                <a href="https://www.zhihu.com/people/tian-cai-z-70" target="_blank">博客</a>
             </li>
             <li>
                 <a href="https://github.com/ZZZoucy" target="_blank">
