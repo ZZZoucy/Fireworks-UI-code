@@ -12,6 +12,13 @@
             <li>
                 <router-link to="/doc">文档</router-link>
             </li>
+            <li>
+                <a href="https://github.com/ZZZoucy" target="_blank">
+                    <svg>
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+            </li>
         </ul>
         <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleAside">
             <use xlink:href="#icon-menu"></use>
@@ -50,7 +57,8 @@ $color: #5a5860;
     background-color: #fff;
     box-shadow: 0 2px 2px rgba(#333, 0.1);
     display: flex;
-    padding: 8px;
+    padding: 5px 1em;
+    margin: 0;
     z-index: 10;
     color: $color;
     justify-content: center;
@@ -58,13 +66,13 @@ $color: #5a5860;
     > .logo {
         max-width: 6em;
         margin-right: auto;
+        margin-top: 5px;
         > a {
             text-decoration: none;
         }
         svg {
             width: 32px;
             height: 32px;
-            margin: 6px 1em;
         }
     }
     > .menu {
@@ -72,10 +80,15 @@ $color: #5a5860;
         flex-direction: row;
         white-space: nowrap;
         flex-wrap: nowrap;
+        margin-top: 5px;
         > li {
-            margin: 10px .8em;
+            margin: 8px .8em;
             > a {
                 text-decoration: none;
+                >svg{
+                    width: 24px;
+                    height: 24px;
+                }
                 &:hover {
                     border-bottom: none;
                 }
