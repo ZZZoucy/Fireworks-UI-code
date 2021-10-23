@@ -38,7 +38,7 @@ export default {
         vertical-align: middle;
         border: none;
         padding: 0;
-        margin-bottom: 8px;
+        margin: 5px;
         background-color: #bfbfbf; //#1890ff
         border-radius: $h/2;
         outline: none;
@@ -105,27 +105,27 @@ export default {
                 }
             }
             &:active {
-            > span {
-                width: $h + 2px;
-                margin-left: -6px;
+                > span {
+                    width: $h + 2px;
+                    margin-left: -6px;
+                }
             }
         }
-    }
-    @keyframes gulu-spin {
-        0% {
-            transform: rotate(0deg);
+        @keyframes gulu-spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
-        100% {
-            transform: rotate(360deg);
+        @keyframes button-hover {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-3px);
+            }
         }
-    }
-    @keyframes button-hover {
-        from {
-            transform: translateY(0);
-        }
-        to {
-            transform: translateY(-3px);
-        }
-    }
     }
 </style> 

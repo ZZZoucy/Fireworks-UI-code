@@ -5,8 +5,8 @@
             <component :is="component" />
         </div>
         <div class="demo-actions">
-            <Button @click="toggleCode" v-if="codeVisible">隐藏代码</Button>
-            <Button @click="toggleCode" v-else>查看代码</Button>
+            <div @click="toggleCode" v-if="codeVisible">隐藏代码</div>
+            <div @click="toggleCode" v-else>查看代码</div>
         </div>
         <div class="demo-code" v-if="codeVisible">
             <pre class="language-html" v-html="html" />
@@ -41,26 +41,33 @@ export default {
     .demo {
         border: 1px solid $border-color;
         margin: 16px 0 32px;
-    >h2 {
-        font-size: 20px;
-        padding: 8px 16px;
-        border-bottom: 1px solid $border-color;
-    }
-    &-component {
-        padding: 16px;
-    }
-    &-actions {
-        padding: 8px 16px;
-        border-top: 1px dashed $border-color;
-    }
-    &-code {
-        padding: 8px 16px;
-        border-top: 1px dashed $border-color;
-        >pre {
-            line-height: 1.1;
-            font-family: Consolas, 'Courier New', Courier, monospace;
-            margin: 0;
+        >h2 {
+            font-size: 20px;
+            padding: 8px 16px;
+            border-bottom: 1px solid $border-color;
+        }
+        &-component {
+            padding: 16px;
+        }
+        &-actions {
+            padding: 8px 16px;
+            border-top: 1px dashed $border-color;
+            cursor: pointer;
+            text-align: center;
+            color: #999;
+            &:hover {
+                color: #4d86af;
+                background-color: #f9fafc;
+            }
+        }
+        &-code {
+            padding: 8px 16px;
+            border-top: 1px dashed $border-color;
+            >pre {
+                line-height: 1.1;
+                font-family: Consolas, 'Courier New', Courier, monospace;
+                margin: 0;
+            }
         }
     }
-}
 </style>

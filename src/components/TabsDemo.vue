@@ -4,12 +4,14 @@
     </div>
     <div class="grey">
         <h2>何时使用</h2>
-        <p><span>选项卡切换</span>，提供平级的区域将大块内容进行收纳和展现，保持界面整洁。</p>
+        <ol>
+            <li><span>选项卡切换</span>。</li>
+            <li>提供平级的区域将大块内容进行收纳和展现，保持界面整洁。</li>
+        </ol>
     </div>
     <div class="code grey">
         <h2>代码演示</h2>
         <div>
-            <h3>一、最简单的用法</h3>
             <Demo :component="Tabs1Demo" />
         </div>
     </div>
@@ -27,24 +29,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$border-color: #d9d9d9;
-.demo{
-    border: 1px solid $border-color;
-    border-radius: 8px;
-}
-h1,p{
-    margin-bottom: 30px;
-}
-.code{
-    margin-bottom: 10px;
-}
-.grey{
-    color: #5a5860;;
-}
-span{
-    color: red;
-}
-h2{
-    margin-bottom: 10px;
-}
+    $border-color: #d9d9d9;
+    .demo{
+        border: 1px solid $border-color;
+    }
+    .code{
+        margin-bottom: 10px;
+    }
+    .grey{
+        color: #5a5860;;
+    }
+    h1,p,h2,ol{
+        margin-bottom: 30px;
+    }
+    li{
+        list-style: circle;
+        line-height: 35px;
+        margin-left: 40px;
+    }
+    span{
+        color: red;
+    }
 </style>

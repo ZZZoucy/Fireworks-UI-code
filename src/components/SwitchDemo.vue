@@ -5,20 +5,16 @@
         </div>
         <div class="grey">
             <h2>何时使用</h2>
-            <p>需要表示<span>开关状态/两种状态</span>之间的切换时。</p>
+            <ol>
+                <li>需要表示<span>开关状态/两种状态</span>之间的切换时。</li>
+                <li>和 checkbox 的区别是，<span>切换 switch 会直接触发状态改变</span>，而 checkbox 一般用于状态标记，需要和提交操作配合。</li>
+            </ol>
         </div>
         <div class="code grey">
             <h2>代码演示</h2>
             <div>
-                <h3>一、最简单的用法</h3>
                 <Demo :component="Switch1Demo" />
-            </div>
-            <div>
-                <h3>二、Switch 失效状态</h3>
                 <Demo :component="Switch2Demo" />
-            </div>
-            <div>
-                <h3>三、加载中</h3>
                 <Demo :component="Switch3Demo" />
             </div>
         </div>
@@ -46,18 +42,19 @@ export default {
     .grey{
         color: #5a5860;;
     }
-    h1,p{
+    h1,p,h2,ol{
         margin-bottom: 30px;
     }
-    h2{
-        margin-bottom: 10px;
+    li{
+        list-style: circle;
+        line-height: 35px;
+        margin-left: 40px;
     }
     .code{
         margin-bottom: 10px;
     }
     .demo {
         border: 1px solid $border-color;
-        border-radius: 8px;
         margin: 16px 0 32px;
         >h2 {
             font-size: 20px;
