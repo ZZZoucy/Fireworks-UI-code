@@ -17,7 +17,7 @@
 <script lang="ts">
 import Button from '../lib/Button.vue';
 import 'prismjs';
-import 'prismjs/themes/prism.css';
+import '../assets/style/prism.css';
 import { computed, ref } from 'vue';
 const Prism = (window as any).Prism;
 export default {
@@ -41,6 +41,9 @@ export default {
     .demo {
         border: 1px solid $border-color;
         margin: 16px 0 32px;
+        &:hover {
+            box-shadow: 0 0 8px 0 rgba(232, 237, 250, .6), 0 2px 4px 0 rgba(232, 237, 250, .5);
+        }
         >h2 {
             font-size: 20px;
             padding: 8px 16px;
@@ -61,10 +64,11 @@ export default {
             }
         }
         &-code {
-            padding: 8px 16px;
+            padding: 16px;
             border-top: 1px dashed $border-color;
+            overflow-x: auto;
             >pre {
-                line-height: 1.1;
+                line-height: 1.2;
                 font-family: Consolas, 'Courier New', Courier, monospace;
                 margin: 0;
             }
