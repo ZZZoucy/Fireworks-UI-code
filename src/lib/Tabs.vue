@@ -33,7 +33,7 @@ export default {
           } = selectedItem.value.getBoundingClientRect();
           const left = SelectedLeft - NavLeft;
           indicator.value.style.left = left + "px";
-        },
+        }
       );
     });
     const CNodes = context.slots.default();

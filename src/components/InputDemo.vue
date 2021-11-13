@@ -20,8 +20,8 @@
 
 <script lang="ts">
 import Demo from './Demo.vue';
-import Input1Demo from './Input1.demo.vue';
-import Input2Demo from './Input2.demo.vue';
+import Input1Demo from './Input.demo/Input1.demo.vue';
+import Input2Demo from './Input.demo/Input2.demo.vue';
 export default {
     components: { Demo },
     setup(){

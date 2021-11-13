@@ -22,9 +22,9 @@
 </template>
 
 <script lang="ts">
-import Switch1Demo from './Switch1.demo.vue';
-import Switch2Demo from './Switch2.demo.vue';
-import Switch3Demo from './Switch3.demo.vue';
+import Switch1Demo from './Switch.demo/Switch1.demo.vue';
+import Switch2Demo from './Switch.demo/Switch2.demo.vue';
+import Switch3Demo from './Switch.demo/Switch3.demo.vue';
 import Demo from './Demo.vue';
 export default {
     components:{ Demo },
