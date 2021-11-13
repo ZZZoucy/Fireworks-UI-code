@@ -99,6 +99,9 @@ export default {
         }
         >main {
             padding: 12px 16px;
+            div{
+                color: red;
+            }
         }
         >footer {
             border-top: 1px solid $border-color;

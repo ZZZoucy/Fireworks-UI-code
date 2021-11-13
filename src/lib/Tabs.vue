@@ -1,103 +1,114 @@
 <template>
-<div class="gulu-tabs">
-  <div class="gulu-tabs-nav" ref="container">
-    <div class="gulu-tabs-nav-item" v-for="(t,index) in titles" :ref="el => { if (t===selected) selectedItem = el }" @click="select(t)" :class="{selected: t=== selected}" :key="index">{{t}}</div>
-    <div class="gulu-tabs-nav-indicator" ref="indicator"></div>
+  <div class="gulu-tabs">
+    <div class="gulu-tabs-nav" ref="container">
+      <div class="gulu-tabs-nav-item" v-for="(CNode, index) in CNodes" :ref="(el) => {if (CNode.props.title === selected) selectedItem = el;}"
+        @click="select(CNode)"
+        :class=" [CNode.props.title === selected ? 'selected' : ''] + [CNode.props.disabled === '' ? 'disabled' : ''] " :key="index">{{ CNode.props.title }}</div>
+      <div class="gulu-tabs-nav-indicator" ref="indicator"></div>
+    </div>
+    <div class="gulu-tabs-content">
+      <component class="gulu-tabs-content-item" :key="current.props.title" :is="current"/>
+    </div>
   </div>
-  <div class="gulu-tabs-content">
-    <component :is="current" :key="current.props.title" />
-  </div>
-</div>
 </template>
-
 <script lang="ts">
-import Tab from './Tab.vue'
-import {
-  computed,
-  ref,
-  watchEffect,
-  onMounted
-} from 'vue'
+import Tab from "./Tab.vue";
+import { computed, ref, onMounted, watchEffect } from "vue";
 export default {
   props: {
-    selected: {
-      type: String
-    }
+    selected: String,
   },
   setup(props, context) {
-    const selectedItem = ref < HTMLDivElement > (null)
-    const indicator = ref < HTMLDivElement > (null)
-    const container = ref < HTMLDivElement > (null)
+    const selectedItem = ref<HTMLDivElement>(null);
+    const indicator = ref<HTMLDivElement>(null);
+    const container = ref<HTMLDivElement>(null);
     onMounted(() => {
-      watchEffect(() => {
-        const { width } = selectedItem.value.getBoundingClientRect()
-        indicator.value.style.width = width + 'px'
-        const { left: left1 } = container.value.getBoundingClientRect()
-        const { left: left2 } = selectedItem.value.getBoundingClientRect()
-        const left = left2 - left1
-        indicator.value.style.left = left + 'px'
-      })
-    })
-    const defaults = context.slots.default()
-    defaults.forEach((tag) => {
-      if (tag.type !== Tab) {
-        throw new Error('Tabs 子标签必须是 Tab')
+      watchEffect(
+        () => {
+          const { width } = selectedItem.value.getBoundingClientRect();
+          indicator.value.style.width = width + "px";
+          const { left: NavLeft } = container.value.getBoundingClientRect();
+          const {
+            left: SelectedLeft,
+          } = selectedItem.value.getBoundingClientRect();
+          const left = SelectedLeft - NavLeft;
+          indicator.value.style.left = left + "px";
+        },
+      );
+    });
+    const CNodes = context.slots.default();
+    CNodes.forEach((CNode) => {
+      // @ts-ignore
+      if (CNode.type.name !== Tab.name) {
+        throw new Error("Tabs 子标签必须是 Tab");
       }
-    })
+    });
     const current = computed(() => {
-      return defaults.find(tag => tag.props.title === props.selected)
-    })
-    const titles = defaults.map((tag) => {
-      return tag.props.title
-    })
-    const select = (title: string) => {
-      context.emit('update:selected', title)
-    }
-    return { current,defaults,titles,select,selectedItem,indicator,container }
-  }
-}
+      return CNodes.find((CNode) => CNode.props.title === props.selected);
+    });
+    const select = (CNode) => {
+      if (CNode.props.disabled === "") {
+        return;
+      }
+      context.emit("update:selected", CNode.props.title);
+    };
+    return {current,CNodes,select,selectedItem,indicator,container};
+  },
+};
 </script>
 
 <style lang="scss">
-    $blue:#40a9ff;
-    $color: #333;
-    $border-color: #d9d9d9;
-    .gulu-tabs{
-        &-nav{
-            display: flex;
-            color: $color;
-            border-bottom: 1px solid $border-color;
-            position: relative;
-            &-item{
-                padding: 8px 0;
-                margin: 0 16px;
-                cursor: pointer;
-                &:first-child{
-                    margin-left: 0;
-                }
-                &.selected{
-                    color: $blue;
-                }
-            }
-            &-indicator{
-                position: absolute;
-                height: 3px;
-                background: $blue;
-                left: 0;
-                bottom: -1px;
-                width: 100px;
-                transition: all 250ms;
-            }
-        }
-        &-content{
-            padding: 8px 0;
-            &-item {
-                display: none;
-                &.selected {
-                    display: block;
-                }
-            }
-        }
-        
+$blue: #40a9ff;
+$color: #333;
+$border-color: #d9d9d9;
+.gulu-tabs {
+  &-nav {
+    display: flex;
+    color: $color;
+    border-bottom: 1px solid $border-color;
+    position: relative;
+    &-item {
+      padding: 8px;
+      margin: 0 8px;
+      cursor: pointer;
+      &.disabled {
+        color: #ccc;
+        cursor: not-allowed;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &.selected {
+        color: $blue;
+      }
     }
+    &-indicator {
+      position: absolute;
+      height: 3px;
+      background: $blue;
+      left: 0;
+      bottom: -1px;
+      transition: all 0.25s cubic-bezier(1, 1.67, 0.21, 0.84);
+    }
+  }
+  &-content {
+    padding: 20px 8px;
+  }
+  @keyframes gulu-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes button-hover {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-3px);
+    }
+  }
+}
 </style>
