@@ -8,7 +8,7 @@
   <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancel="f2">
     <template v-slot:content>
       <strong>第一行内容</strong>
-      <div>第二行内容</div>
+      <p>第二行内容</p>
     </template>
     <template v-slot:title>
       <strong>加粗的标题</strong>
@@ -29,7 +29,7 @@ export default {
         x.value = !x.value
     }
     const f1 = () => {
-        return false;
+        return true;
     }
     const f2 = () => { }
     return { x, toggle, f1, f2 }

@@ -1,7 +1,9 @@
 <template>
+    <!-- classes 存放不同按钮的 class 名称 -->
     <button class="gulu-button" :class="classes" :disabled="disabled">
+        <!-- span 用来画加载中的圈圈 -->
         <span v-if="loading" class="gulu-loadingIndicator"></span>
-        <slot />
+        <slot /> 
     </button>
 </template>
 
@@ -191,7 +193,11 @@ export default {
         }
     }
     @keyframes gulu-spin {
-        0%{transform: rotate(0deg);}
-        100%{transform: rotate(360deg);}
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
     }
 </style>

@@ -1,7 +1,9 @@
-<template>
-    <template v-if="visible">
+<template> 
+    <template v-if="visible"> 
         <teleport to="body">
+            <!-- 第一个 div 是用来做背景暗灰的效果的 -->
             <div class="gulu-dialog-overlay" @click="closeOnClickOverlay"></div>
+            <!-- 第二个 div 是做对话框的 -->
             <div class="gulu-dialog-wrapper">
                 <div class="gulu-dialog">
                     <header>

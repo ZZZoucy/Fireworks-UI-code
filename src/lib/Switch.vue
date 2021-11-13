@@ -1,6 +1,6 @@
-<template> 
-    <button :disabled="loading ? true : disabled" class="gulu-switch" @click="toggle" :class="{'gulu-checked':value}">
-      <span><span class="gulu-switch-loading" v-if="loading"></span></span>
+<template>
+    <button :disabled="loading ? true : disabled" class="gulu-switch"  @click="toggle" :class="{'gulu-checked':value}">
+        <span><span class="gulu-switch-loading" v-if="loading"></span></span>
     </button>
 </template>
 
@@ -18,6 +18,7 @@ export default {
         },
     },
     setup(props,context){
+        // props.value 返回 true or false 表示 开关的 开和关 状态
         const toggle = () => {
             context.emit('update:value',!props.value)
         }
@@ -29,7 +30,7 @@ export default {
 <style lang="scss">
     $h: 22px;
     $h2: $h - 4px;
-    .gulu-switch {
+    .gulu-switch{
         position: relative;
         display: inline-block;
         width: $h * 2;
@@ -76,15 +77,6 @@ export default {
                 animation: gulu-spin 1s infinite linear;
             }
         }
-        > p {
-            display: inline-block;
-            width: 14px;
-            height: $h;
-            font-size: 14px;
-            color: #fff;
-            margin: 0 7px 0 22px;
-            transition: margin 0.25s ease-in-out;
-        }
         &:active {
             > span {
                 width: $h + 2px;
@@ -94,9 +86,6 @@ export default {
             background-color: #1890ff;
             > span {
                 left: calc(100% - #{$h2} - 2px);
-            }
-            > p {
-                margin: 0 25px 0 7px;
             }
             &:focus {
                 box-shadow: 0 0 5px rgba(24, 144, 255, 0.5);
@@ -111,21 +100,15 @@ export default {
                 }
             }
         }
+
         @keyframes gulu-spin {
-            0% {
+            0%{
                 transform: rotate(0deg);
             }
-            100% {
+            100%{
                 transform: rotate(360deg);
             }
         }
-        @keyframes button-hover {
-            from {
-                transform: translateY(0);
-            }
-            to {
-                transform: translateY(-3px);
-            }
-        }
     }
-</style> 
+
+</style>

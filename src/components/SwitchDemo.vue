@@ -1,4 +1,4 @@
-<template>
+<template> 
     <div>
         <div>
             <h1>Switch 组件示例 </h1>

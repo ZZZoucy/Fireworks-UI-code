@@ -1,3 +1,5 @@
+每个 button.demo文件 代表一个框框
+
 <demo>
 常规使用
 </demo>
