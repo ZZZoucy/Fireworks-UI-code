@@ -22,6 +22,7 @@
                     <li><router-link to="/doc/dialog">Dialog 组件</router-link></li>
                     <li><router-link to="/doc/tabs">Tabs 组件</router-link></li>
                     <li><router-link to="/doc/input">Input 组件</router-link></li>
+                    <li><router-link to="/doc/radio">Radio 组件</router-link></li>
                 </ol>
             </aside>
             <main>
