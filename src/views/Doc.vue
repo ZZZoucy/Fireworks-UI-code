@@ -3,7 +3,7 @@
         <Topnav toggleMenuButtonVisible class="nav" />
         <div class="content">
             <aside v-if="asideVisible">
-                <h2>文档</h2>
+                <h3>文档</h3>
                 <ol>
                     <li>
                         <router-link to="/doc/intro">介绍</router-link>
@@ -15,7 +15,7 @@
                         <router-link to="/doc/get-started">开始使用</router-link>
                     </li>
                 </ol>
-                <h2>组件列表</h2>
+                <h3>组件列表</h3>
                 <ol>
                     <li><router-link to="/doc/switch">Switch 组件</router-link></li>
                     <li><router-link to="/doc/button">Button 组件</router-link></li>
@@ -23,6 +23,13 @@
                     <li><router-link to="/doc/tabs">Tabs 组件</router-link></li>
                     <li><router-link to="/doc/input">Input 组件</router-link></li>
                     <li><router-link to="/doc/radio">Radio 组件</router-link></li>
+                    <li><router-link to="/doc/update">更多组件</router-link></li>
+                </ol>
+                <h3>其他项目</h3>
+                <ol>
+                    <li><router-link to="/doc/blog">我的博客</router-link></li>
+                    <li><router-link to="/doc/blog">我的博客</router-link></li>
+                    <li><router-link to="/doc/blog">我的博客</router-link></li>
                 </ol>
             </aside>
             <main>
@@ -33,16 +40,16 @@
 </template>
 
 <script lang="ts">
-import Topnav from '../components/Topnav.vue';
-import { Ref , inject } from 'vue';
+import Topnav from "../components/Topnav.vue";
+import { Ref, inject } from "vue";
 
 export default {
-    components:{Topnav},
-    setup(){
-        const asideVisible = inject<Ref<boolean>>('asideVisible');   // get
-        return {asideVisible}
-    }
-}
+    components: { Topnav },
+    setup() {
+        const asideVisible = inject<Ref<boolean>>("asideVisible"); // get
+        return { asideVisible };
+    },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -55,7 +62,8 @@ $text: #ae82aa;
     flex-direction: column;
     height: 100vh;
     > .nav {
-        flex-shrink: 0; //高度变化时不收缩
+        /* 高度变化时不收缩 */
+        flex-shrink: 0;
         position: fixed;
         top: 0;
         left: 0;
@@ -73,80 +81,82 @@ $text: #ae82aa;
         }
         @media (max-width: 500px) {
             padding-left: 0;
-        main {
-            height: 80vh;
-            overflow: auto;
-            flex-grow: 1; //高度变化时,占据剩余空间
-            padding: 32px;
-        }
-        }
-    }
-}
-aside {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 265px;
-    height: 110vh;
-    padding: 16px 0;
-    padding-top: 80px;
-    background: #fff;
-    box-shadow: 4px 0 4px rgba(#333, 0.1);
-    z-index: 1;
-    transition: all 0.4s cubic-bezier(0.68, 0.18, 0.53, 0.18) 0.1s;
-    > h2 {
-        margin-bottom: 4px;
-        margin-top: 16px;
-        padding: 0 40px;
-        color: #5a5860;;
-    }
-    > ol {
-        line-height: 40px;
-        > li {
-        > a {
-            position: relative;
-            height: 40px;
-            color: $text;
-            display: block;
-            padding: 4px 50px;
-            text-decoration: none;
-            &:hover {
-            // color: #fff;
-            background: $lightbgc;
-            border-bottom: none;
+            main {
+                height: 80vh;
+                overflow: auto;
+                /* 高度变化时,占据剩余空间 */
+                flex-grow: 1;
+                padding: 32px;
             }
         }
-        .router-link-active {
-            background: $lightbgc;
-            // color: #fff;
-            border-right: 3px solid $deepbgc;
-            @media (min-width: 500px) {
-            border-right: none;
-            &::after {
-                content: "";
-                display: block;
-                animation: bdrolate 0.8s;
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 3px;
-                height: 40px;
-                background-color: $deepbgc;
+
+        aside {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0px;
+            width: 256px;
+            height: auto;
+            margin-top: 60px;
+            padding-bottom: 32px;
+            background: #fff;
+            box-shadow: 4px 0 4px rgba(#333, 0.1);
+            z-index: 1;
+            transition: all 0.4s cubic-bezier(0.68, 0.18, 0.53, 0.18) 0.1s;
+            overflow: hidden scroll;
+            > h3 {
+                font-size: 22px;
+                margin-bottom: 4px;
+                margin-top: 16px;
+                padding: 0 16px;
+                color: #5a5860;
             }
+            > ol {
+                line-height: 40px;
+                > li {
+                    > a {
+                        position: relative;
+                        /* height: 40px; */
+                        color: $text;
+                        display: block;
+                        padding: 4px 32px;
+                        text-decoration: none;
+                        &:hover {
+                            /* color: #fff; */
+                            background: $lightbgc;
+                            border-bottom: none;
+                        }
+                    }
+                    .router-link-active {
+                        background: $lightbgc;
+                        /* color: #fff; */
+                        border-right: 3px solid $deepbgc;
+                        @media (min-width: 500px) {
+                            border-right: none;
+                            &::after {
+                                content: "";
+                                display: block;
+                                animation: bdrolate 0.8s;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 3px;
+                                height: 48px;
+                                background-color: $deepbgc;
+                            }
+                        }
+                    }
+                }
             }
-        }
+            @keyframes bdrolate {
+                0% {
+                    transform: rotateX(90deg);
+                }
+                100% {
+                    transform: rotateX(0deg);
+                }
+            }
         }
     }
-    @keyframes bdrolate {
-        0% {
-        transform: rotateX(90deg);
-        }
-        100% {
-        transform: rotateX(0deg);
-        }
-    }
-}
-main {
-    overflow: auto;
 }
 </style>
