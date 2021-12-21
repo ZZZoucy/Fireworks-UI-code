@@ -28,8 +28,9 @@
                 <h3>其他项目</h3>
                 <ol>
                     <li><router-link to="/doc/blog">我的博客</router-link></li>
-                    <li><router-link to="/doc/blog">我的博客</router-link></li>
-                    <li><router-link to="/doc/blog">我的博客</router-link></li>
+                    <li><router-link to="/doc/bookkeeping">学学记账</router-link></li>
+                    <li><router-link to="/doc/notes">Daily-notes</router-link></li>
+                    <li><router-link to="/doc/daping">大屏可视化项目</router-link></li>
                 </ol>
             </aside>
             <main>
@@ -82,11 +83,12 @@ $text: #ae82aa;
         @media (max-width: 500px) {
             padding-left: 0;
             main {
-                height: 80vh;
+                height: 90vh;
                 overflow: auto;
                 /* 高度变化时,占据剩余空间 */
                 flex-grow: 1;
                 padding: 32px;
+                margin-top: 2px;
             }
         }
 
@@ -97,7 +99,7 @@ $text: #ae82aa;
             bottom: 0px;
             width: 256px;
             height: auto;
-            margin-top: 60px;
+            margin-top: 62px;
             padding-bottom: 32px;
             background: #fff;
             box-shadow: 4px 0 4px rgba(#333, 0.1);

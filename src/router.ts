@@ -14,6 +14,9 @@ import intro from "./markdown/intro.md";
 import getStarted from "./markdown/get-started.md";
 import install from "./markdown/install.md";
 import blog from "./markdown/blog.md";
+import bookkeeping from "./markdown/bookkeeping.md";
+import notes from "./markdown/notes.md";
+import daping from "./markdown/daping.md";
 
 const history = createWebHashHistory();
 const md = (string) => h(Markdown, { content: string, key: string });
@@ -30,6 +33,9 @@ export const router = createRouter({
                 { path: "get-started", component: md(getStarted) },
                 { path: "install", component: md(install) },
                 { path: "blog", component: md(blog) },
+                { path: "bookkeeping", component: md(bookkeeping) },
+                { path: "notes", component: md(notes) },
+                { path: "daping", component: md(daping) },
                 { path: "switch", component: SwitchDemo },
                 { path: "button", component: ButtonDemo },
                 { path: "dialog", component: DialogDemo },
